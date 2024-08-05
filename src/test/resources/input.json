@@ -1,0 +1,96 @@
+{
+    "0": {
+        "id": 0,
+        "parentId": -1,
+        "ruleSelected": {
+            "id": 1,
+            "label": "EXPRESSION_ALL",
+            "value": "AND"
+        },
+        "fields": [
+            1,
+            2
+        ],
+        "expressionLevel": 1,
+        "hasSumSelected": false
+    },
+    "1": {
+        "attachedId": 38,
+        "id": 1,
+        "label": "ABA_LEAKAGE",
+        "value": "ABA_LEAKAGE",
+        "name": "ABA_LEAKAGE",
+        "custom": false,
+        "parentId": 0,
+        "textVal": "4",
+        "comparisonOperator": "<",
+        "hasVal": true
+    },
+    "2": {
+        "id": 2,
+        "parentId": 0,
+        "ruleSelected": {
+            "id": 2,
+            "label": "EXPRESSION_ANY",
+            "value": "OR"
+        },
+        "fields": [
+            3,
+            4,
+            5
+        ],
+        "expressionLevel": 2,
+        "hasSumSelected": false
+    },
+    "3": {
+        "attachedId": 125,
+        "id": 3,
+        "label": "AADHAR_LEAKAGE",
+        "value": "AADHAR_LEAKAGE",
+        "name": "AADHAR_LEAKAGE",
+        "custom": false,
+        "parentId": 2,
+        "textVal": "12",
+        "comparisonOperator": ">",
+        "hasVal": true
+    },
+    "4": {
+        "attachedId": 48,
+        "id": 4,
+        "label": "ADULT_CONTENT",
+        "value": "ADULT_CONTENT",
+        "name": "ADULT_CONTENT",
+        "custom": false,
+        "parentId": 2,
+        "comparisonOperator": "==",
+        "textVal": "0",
+        "hasVal": false
+    },
+    "5": {
+        "id": 5,
+        "parentId": 2,
+        "ruleSelected": {
+            "id": 4,
+            "label": "EXPRESSION_EXCLUDE",
+            "value": "NOT",
+            "excludeOperator": "AND"
+        },
+        "fields": [
+            6
+        ],
+        "expressionLevel": 3,
+        "hasSumSelected": false
+    },
+    "6": {
+        "attachedId": 63,
+        "id": 6,
+        "label": "CREDIT_CARD",
+        "value": "CREDIT_CARD",
+        "name": "CREDIT_CARD",
+        "custom": false,
+        "parentId": 5,
+        "comparisonOperator": "==",
+        "textVal": "5",
+        "hasVal": true
+    }
+}

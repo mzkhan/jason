@@ -1,0 +1,41 @@
+{
+    "0": {
+        "id": 0,
+        "parentId": -1,
+        "ruleSelected": {
+            "id": 1,
+            "label": "EXPRESSION_ALL",
+            "value": "AND"
+        },
+        "fields": [
+            1,
+            2
+        ],
+        "expressionLevel": 1,
+        "hasSumSelected": false
+    },
+    "1": {
+        "attachedId": 38,
+        "id": 1,
+        "label": "ABA_LEAKAGE",
+        "value": "ABA_LEAKAGE",
+        "name": "ABA_LEAKAGE",
+        "custom": false,
+        "parentId": 0,
+        "comparisonOperator": ">",
+        "textVal": "4",
+        "hasVal": true
+    },
+     "2": {
+        "attachedId": 38,
+        "id": 1,
+        "label": "test",
+        "value": "test",
+        "name": "test",
+        "custom": false,
+        "comparisonOperator": "<",
+        "parentId": 0,
+        "textVal": "4",
+        "hasVal": true
+    }
+}
